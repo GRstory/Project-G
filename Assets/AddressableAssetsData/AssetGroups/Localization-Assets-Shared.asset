@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Localization-Assets-Shared
+  m_EditorClassIdentifier: 
+  m_GroupName: Localization-Assets-Shared
+  m_GUID: ea0d5fb33e658b742bceffd87eb2bbbd
+  m_SerializeEntries:
+  - m_GUID: 15d355cc680a39c4285f378d810aaca8
+    m_Address: Assets/Locale/AchievementTable Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 25e6e256ce3a70143bf17d2279c921df
+    m_Address: Assets/Locale/WorldMapPosition Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2779e0278602f26448af8a659c4250ee
+    m_Address: Assets/Locale/InteractionableObject Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 64d9f25283679f64bbe8628e20819e7a
+    m_Address: Assets/Locale/NPC Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 74d8788b7ca029f4db0b6dda0551e597
+    m_Address: Assets/Locale/SpriteTable Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7e9ab0b7325a9554ea0147d3dca831aa
+    m_Address: Assets/Locale/CollectableItem Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8ce3c2bd60e19ba4eb35215c011b6c8a
+    m_Address: BasicSquareImage
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    - Locale-ko
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 92226535a42c53042891289ff59c33f6
+    m_Address: Assets/Locale/Misc Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cde55f21c4887a54488a1c319b6d23ed
+    m_Address: Assets/Locale/UI Table Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 1
+  m_Settings: {fileID: 11400000, guid: 4f66436b569eb3d49898392e49bbc5b6, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: c2c4af0d142c90a4e9ae55a51c2d48d7, type: 2}
+    - {fileID: 11400000, guid: dd9c48954edc48d4fb0e1ea1287b4855, type: 2}

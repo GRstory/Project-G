@@ -1,0 +1,291 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: UI Table_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: cde55f21c4887a54488a1c319b6d23ed, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 115148197888
+    m_Localized: TITLE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7307913990144
+    m_Localized: SUBTITLE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7307913990145
+    m_Localized: ESC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7307913990147
+    m_Localized: PAUSE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7307918184448
+    m_Localized: Time does not flow during the pause menu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7307918184449
+    m_Localized: 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7307918184450
+    m_Localized: 3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7307918184451
+    m_Localized: Press ESC to resume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7307918184452
+    m_Localized: SETTING
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7307918184453
+    m_Localized: HELP
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7307918184454
+    m_Localized: BACK TO MAIN
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7307918184455
+    m_Localized: QUIT
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7307918184457
+    m_Localized: CONVERSATION
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7307918184458
+    m_Localized: You can have a conversation with the NPC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7307918184459
+    m_Localized: Press ESC to quit conversation mode
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15063018508288
+    m_Localized: 'Enter Text :'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 51388052541440
+    m_Localized: Dialog
+    m_Metadata:
+      m_Items: []
+  - m_Id: 51481849761792
+    m_Localized: NPC Info
+    m_Metadata:
+      m_Items: []
+  - m_Id: 430260342362112
+    m_Localized: EVIDENCE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 430260342362113
+    m_Localized: You can browse the evidence items
+    m_Metadata:
+      m_Items: []
+  - m_Id: 430260342362114
+    m_Localized: Press ESC to resume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 430260342362115
+    m_Localized: "\u2192"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 430260342362116
+    m_Localized: "\u2190"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 430260342362117
+    m_Localized: "\u2191"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 430260342362118
+    m_Localized: "\u2193"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 741089596018688
+    m_Localized: collected items
+    m_Metadata:
+      m_Items: []
+  - m_Id: 741089600212992
+    m_Localized: collected items can be used somewhere
+    m_Metadata:
+      m_Items: []
+  - m_Id: 741089600212993
+    m_Localized: Press ESC to resume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 741089600212994
+    m_Localized: You can click on the item to see where it was collected
+    m_Metadata:
+      m_Items: []
+  - m_Id: 746621870411776
+    m_Localized: There is no collected item
+    m_Metadata:
+      m_Items: []
+  - m_Id: 772105756872705
+    m_Localized: Settings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 772105756872707
+    m_Localized: Press ESC to resume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 772105756872708
+    m_Localized: Display
+    m_Metadata:
+      m_Items: []
+  - m_Id: 772105756872709
+    m_Localized: Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 772105756872712
+    m_Localized: ON
+    m_Metadata:
+      m_Items: []
+  - m_Id: 772105756872713
+    m_Localized: OFF
+    m_Metadata:
+      m_Items: []
+  - m_Id: 772105756872714
+    m_Localized: Display Mode
+    m_Metadata:
+      m_Items: []
+  - m_Id: 772105756872715
+    m_Localized: Fullscreen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 781080946675712
+    m_Localized: Windowed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 772105756872718
+    m_Localized: Resolution
+    m_Metadata:
+      m_Items: []
+  - m_Id: 772105756872719
+    m_Localized: Refreshlate
+    m_Metadata:
+      m_Items: []
+  - m_Id: 779509500350464
+    m_Localized: Vsync
+    m_Metadata:
+      m_Items: []
+  - m_Id: 781080950870016
+    m_Localized: 60
+    m_Metadata:
+      m_Items: []
+  - m_Id: 781080950870017
+    m_Localized: 120
+    m_Metadata:
+      m_Items: []
+  - m_Id: 781080950870018
+    m_Localized: 144
+    m_Metadata:
+      m_Items: []
+  - m_Id: 772105756872710
+    m_Localized: Button 3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 772105756872711
+    m_Localized: Button 4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 785510911840256
+    m_Localized: Master Volume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 785510916034560
+    m_Localized: BGM Volume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 785510916034561
+    m_Localized: Effect Volume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 824080527659008
+    m_Localized: You need item [
+    m_Metadata:
+      m_Items: []
+  - m_Id: 824080527659009
+    m_Localized: ']'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1227098259591168
+    m_Localized: START
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1227133936340992
+    m_Localized: ACHIEVEMENT
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1227135496622080
+    m_Localized: EXIT
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1273728245567488
+    m_Localized: Game Helper
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1273728245567489
+    m_Localized: Game Helper
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1273728245567490
+    m_Localized: Press ESC to quit Helper menu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1273728245567491
+    m_Localized: CONTROL
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1273728245567492
+    m_Localized: HOW TO PLAY
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1273728249761792
+    m_Localized: DEDUCTION
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1273728249761793
+    m_Localized: DEVELOPER
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1586606110543872
+    m_Localized: ACHIEVEMENT
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1586606114738176
+    m_Localized: If you clear achievement, you can see description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1586606114738177
+    m_Localized: Press ESC to go to the main menu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1586606114738178
+    m_Localized: Click the icon to check the contents
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1586606114738179
+    m_Localized: You can see description
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

@@ -1,0 +1,333 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: UI Table Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: UI Table
+  m_TableCollectionNameGuidString: cde55f21c4887a54488a1c319b6d23ed
+  m_Entries:
+  - m_Id: 115148197888
+    m_Key: UI_Popup_Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7307913990144
+    m_Key: UI_Popup_SubTitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7307913990145
+    m_Key: UI_Popup_ESC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 772105727512576
+    m_Key: UI_Pause
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7307913990147
+    m_Key: UI_Pause_Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7307918184448
+    m_Key: UI_Pause_SubTitle_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7307918184449
+    m_Key: UI_Pause_SubTitle_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7307918184450
+    m_Key: UI_Pause_SubTitle_3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7307918184451
+    m_Key: UI_Pause_ESC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7307918184452
+    m_Key: UI_Pause_Btn1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7307918184453
+    m_Key: UI_Pause_Btn2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7307918184454
+    m_Key: UI_Pause_Btn3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7307918184455
+    m_Key: UI_Pause_Btn4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 772105752678400
+    m_Key: UI_Chatting
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7307918184457
+    m_Key: UI_Chatting_Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7307918184458
+    m_Key: UI_Chatting_SubTitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7307918184459
+    m_Key: UI_Chatting_ESC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15063018508288
+    m_Key: UI_Chatting_InputFiled_PlaceHolder
+    m_Metadata:
+      m_Items: []
+  - m_Id: 51388052541440
+    m_Key: UI_Chatting_Btn1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 51481849761792
+    m_Key: UI_Chatting_Btn2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 772105752678401
+    m_Key: UI_DetailView
+    m_Metadata:
+      m_Items: []
+  - m_Id: 430260342362112
+    m_Key: UI_DetailView_Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 430260342362113
+    m_Key: UI_DetailView_SubTitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 430260342362114
+    m_Key: UI_DetailView_ESC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 430260342362115
+    m_Key: UI_DetailView_Btn1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 430260342362116
+    m_Key: UI_DetailView_Btn2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 430260342362117
+    m_Key: UI_DetailView_Btn3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 430260342362118
+    m_Key: UI_DetailView_Btn4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 772105752678402
+    m_Key: UI_Inventory
+    m_Metadata:
+      m_Items: []
+  - m_Id: 741089596018688
+    m_Key: UI_Inventory_Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 741089600212992
+    m_Key: UI_Inventory_SubTitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 741089600212993
+    m_Key: UI_Inventory_ESC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 741089600212994
+    m_Key: UI_Inventory_ItemPositionText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 746621870411776
+    m_Key: UI_Inventory_ZeroItems
+    m_Metadata:
+      m_Items: []
+  - m_Id: 772105756872704
+    m_Key: UI_Setting
+    m_Metadata:
+      m_Items: []
+  - m_Id: 772105756872705
+    m_Key: UI_Setting_Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 772105756872706
+    m_Key: UI_Setting_SubTitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 772105756872707
+    m_Key: UI_Setting_ESC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 772105756872708
+    m_Key: UI_Setting_Tap1_Btn
+    m_Metadata:
+      m_Items: []
+  - m_Id: 772105756872709
+    m_Key: UI_Setting_Tap2_Btn
+    m_Metadata:
+      m_Items: []
+  - m_Id: 772105756872710
+    m_Key: UI_Setting_Tap3_Btn
+    m_Metadata:
+      m_Items: []
+  - m_Id: 772105756872711
+    m_Key: UI_Setting_Tap4_Btn
+    m_Metadata:
+      m_Items: []
+  - m_Id: 772105756872712
+    m_Key: UI_Setting_OnOff_Btn_On
+    m_Metadata:
+      m_Items: []
+  - m_Id: 772105756872713
+    m_Key: UI_Setting_OnOff_Btn_Off
+    m_Metadata:
+      m_Items: []
+  - m_Id: 772105756872714
+    m_Key: UI_Setting_Tab1_Option1_Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 772105756872715
+    m_Key: UI_Setting_Tab1_Option1_S1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 781080946675712
+    m_Key: UI_Setting_Tab1_Option1_S2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 772105756872718
+    m_Key: UI_Setting_Tab1_Option2_Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 772105756872719
+    m_Key: UI_Setting_Tab1_Option3_Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 781080950870016
+    m_Key: UI_Setting_Tab1_Option3_S1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 781080950870017
+    m_Key: UI_Setting_Tab1_Option3_S2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 781080950870018
+    m_Key: UI_Setting_Tab1_Option3_S3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 779509500350464
+    m_Key: UI_Setting_Tab1_Option4_Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 785510911840256
+    m_Key: UI_Setting_Tab2_Option1_Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 785510916034560
+    m_Key: UI_Setting_Tab2_Option2_Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 785510916034561
+    m_Key: UI_Setting_Tab2_Option3_Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 824080506687488
+    m_Key: New Entry
+    m_Metadata:
+      m_Items: []
+  - m_Id: 824080527659008
+    m_Key: UI_HUD_Alarm_1_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 824080527659009
+    m_Key: UI_HUD_Alarm_1_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1227098259591168
+    m_Key: UI_Main_Btn_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1227133936340992
+    m_Key: UI_Main_Btn_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1227135496622080
+    m_Key: UI_Main_Btn_3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1273728224595968
+    m_Key: New Entry 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1273728245567488
+    m_Key: UI_Help_Text_Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1273728245567489
+    m_Key: UI_Help_Text_SubTitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1273728245567490
+    m_Key: UI_Help_Text_ESC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1273728245567491
+    m_Key: UI_Help_Btn_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1273728245567492
+    m_Key: UI_Help_Btn_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1273728249761792
+    m_Key: UI_Help_Btn_3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1273728249761793
+    m_Key: UI_Help_Btn_4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1586606093766656
+    m_Key: UI_Achievement
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1586606110543872
+    m_Key: UI_Achievement_Text_Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1586606114738176
+    m_Key: UI_Achievement_Text_SubTitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1586606114738177
+    m_Key: UI_Achievement_Text_ESC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1586606114738178
+    m_Key: UI_Achievement_Text_Blank
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1586606114738179
+    m_Key: UI_Achievement_Text_Blank_Description
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 586003000203149516
+  references:
+    version: 2
+    RefIds:
+    - rid: 586003000203149516
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables,
+        asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1722322644978

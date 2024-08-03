@@ -1,0 +1,77 @@
+﻿Key,Id,English(en),Korean(ko)
+UI_Popup_Title,1.15148E+11,TITLE,타이틀
+UI_Popup_SubTitle,7.30791E+12,SUBTITLE,서브타이틀
+UI_Popup_ESC,7.30791E+12,ESC,ESC
+UI_Pause,7.72106E+14,,
+UI_Pause_Title,7.30791E+12,PAUSE,일시정지
+UI_Pause_SubTitle_1,7.30792E+12,Time does not flow during the pause menu,일시정지 메뉴 동안에는 시간이 흐르지 않습니다
+UI_Pause_SubTitle_2,7.30792E+12,2,2
+UI_Pause_SubTitle_3,7.30792E+12,3,3
+UI_Pause_ESC,7.30792E+12,Press ESC to resume,ESC를 눌러 게임 재개
+UI_Pause_Btn1,7.30792E+12,SETTING,설정
+UI_Pause_Btn2,7.30792E+12,HELP,도움말
+UI_Pause_Btn3,7.30792E+12,BACK TO MAIN,메인화면으로 돌아가기
+UI_Pause_Btn4,7.30792E+12,QUIT,종료
+UI_Chatting,7.72106E+14,,
+UI_Chatting_Title,7.30792E+12,CONVERSATION,대화
+UI_Chatting_SubTitle,7.30792E+12,You can have a conversation with the NPC,NPC와 대화를 할 수 있습니다
+UI_Chatting_ESC,7.30792E+12,Press ESC to quit conversation mode,ESC를 눌러 대화모드 종료
+UI_Chatting_InputFiled_PlaceHolder,1.5063E+13,Enter Text :,대화를 입력하세요 :
+UI_Chatting_Btn1,5.13881E+13,Dialog,대화 기록
+UI_Chatting_Btn2,5.14818E+13,NPC Info,NPC 정보
+UI_DetailView,7.72106E+14,,
+UI_DetailView_Title,4.3026E+14,EVIDENCE,증거물
+UI_DetailView_SubTitle,4.3026E+14,You can browse the evidence items,증거물 아이템을 둘러볼 수 있습니다
+UI_DetailView_ESC,4.3026E+14,Press ESC to resume,ESC를 눌러 게임 재개
+UI_DetailView_Btn1,4.3026E+14,→,→
+UI_DetailView_Btn2,4.3026E+14,←,←
+UI_DetailView_Btn3,4.3026E+14,↑,↑
+UI_DetailView_Btn4,4.3026E+14,↓,↓
+UI_Inventory,7.72106E+14,,
+UI_Inventory_Title,7.4109E+14,collected items,수집한 아이템
+UI_Inventory_SubTitle,7.4109E+14,collected items can be used somewhere,수집한 아이템은 어딘가에 사용할 수 있습니다
+UI_Inventory_ESC,7.4109E+14,Press ESC to resume,ESC를 눌러 게임 재개
+UI_Inventory_ItemPositionText,7.4109E+14,You can click on the item to see where it was collected,아이템을 눌러 수집 위치를 확인할 수 있습니다
+UI_Inventory_ZeroItems,7.46622E+14,There is no collected item,수집한 아이템이 없습니다
+UI_Setting,7.72106E+14,,
+UI_Setting_Title,7.72106E+14,Settings,설정
+UI_Setting_SubTitle,7.72106E+14,,
+UI_Setting_ESC,7.72106E+14,Press ESC to resume,ESC를 눌러 게임 재개
+UI_Setting_Tap1_Btn,7.72106E+14,Display,화면
+UI_Setting_Tap2_Btn,7.72106E+14,Sound,소리
+UI_Setting_Tap3_Btn,7.72106E+14,Button 3,버튼3
+UI_Setting_Tap4_Btn,7.72106E+14,Button 4,버튼4
+UI_Setting_OnOff_Btn_On,7.72106E+14,ON,ON
+UI_Setting_OnOff_Btn_Off,7.72106E+14,OFF,OFF
+UI_Setting_Tab1_Option1_Name,7.72106E+14,Display Mode,화면 모드
+UI_Setting_Tab1_Option1_S1,7.72106E+14,Fullscreen,전체화면
+UI_Setting_Tab1_Option1_S2,7.81081E+14,Windowed,창
+UI_Setting_Tab1_Option2_Name,7.72106E+14,Resolution,해상도
+UI_Setting_Tab1_Option3_Name,7.72106E+14,Refreshlate,주사율
+UI_Setting_Tab1_Option3_S1,7.81081E+14,60,60
+UI_Setting_Tab1_Option3_S2,7.81081E+14,120,120
+UI_Setting_Tab1_Option3_S3,7.81081E+14,144,144
+UI_Setting_Tab1_Option4_Name,7.7951E+14,Vsync,수직동기화
+UI_Setting_Tab2_Option1_Name,7.85511E+14,Master Volume,마스터 볼륨
+UI_Setting_Tab2_Option2_Name,7.85511E+14,BGM Volume,배경음악 볼륨
+UI_Setting_Tab2_Option3_Name,7.85511E+14,Effect Volume,특수효과 볼륨
+New Entry,8.24081E+14,,
+UI_HUD_Alarm_1_1,8.24081E+14,You need item [,아이템 [
+UI_HUD_Alarm_1_2,8.24081E+14,],] 가 필요합니다
+UI_Main_Btn_1,1227098259591168,START,게임 시작
+UI_Main_Btn_2,1227133936340992,ACHIEVEMENT,도전과제
+UI_Main_Btn_3,1227135496622080,EXIT,게임 종료
+New Entry 1,1273728224595968,,
+UI_Help_Text_Title,1273728245567488,Game Helper,도움말
+UI_Help_Text_SubTitle,1273728245567489,Game Helper,도움말
+UI_Help_Text_ESC,1273728245567490,Press ESC to quit Helper menu,ESC를 눌러 도움말 메뉴 종료
+UI_Help_Btn_1,1273728245567491,CONTROL,조작
+UI_Help_Btn_2,1273728245567492,HOW TO PLAY,게임 진행
+UI_Help_Btn_3,1273728249761792,DEDUCTION,추리
+UI_Help_Btn_4,1273728249761793,DEVELOPER,개발자
+UI_Achievement,,,
+UI_Achievement_Text_Title,,ACHIEVEMENT,도전과제
+UI_Achievement_Text_SubTitle,,"If you clear achievement, you can see description",도전과제를 달성하면 내용을 볼 수 있습니다
+UI_Achievement_Text_ESC,,Press ESC to go to the main menu,ESC를 눌러 메인 메뉴로 이동
+UI_Achievement_Text_Blank,,Click the icon to check the contents,아이콘을 눌러 내용을 확인하세요
+UI_Achievement_Text_Blank_Description,,You can see description,도전과제 설명이 보입니다

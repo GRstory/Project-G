@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: InteractionableObject Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: InteractionableObject
+  m_TableCollectionNameGuidString: 2779e0278602f26448af8a659c4250ee
+  m_Entries:
+  - m_Id: 7434276864
+    m_Key: 0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38266605568
+    m_Key: 10000
+    m_Metadata:
+      m_Items: []
+  - m_Id: 159528128512
+    m_Key: 10001
+    m_Metadata:
+      m_Items: []
+  - m_Id: 258535407357952
+    m_Key: 10100
+    m_Metadata:
+      m_Items: []
+  - m_Id: 259836669202432
+    m_Key: 10101
+    m_Metadata:
+      m_Items: []
+  - m_Id: 269953628246016
+    m_Key: 10200
+    m_Metadata:
+      m_Items: []
+  - m_Id: 368691046649856
+    m_Key: 10500
+    m_Metadata:
+      m_Items: []
+  - m_Id: 609124813246464
+    m_Key: 10501
+    m_Metadata:
+      m_Items: []
+  - m_Id: 669128106840064
+    m_Key: 10700
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 586003008443646051
+  references:
+    version: 2
+    RefIds:
+    - rid: 586003008443646051
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables,
+        asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1722356863255
