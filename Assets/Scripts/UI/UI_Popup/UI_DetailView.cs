@@ -16,15 +16,16 @@ public class UI_DetailView : UI_Popup
 
     private void Awake()
     {
-        _overlayCamera = GameObject.FindGameObjectWithTag("OverlayCamera");
+        _overlayCamera = GameObject.FindGameObjectWithTag("OverlayCamera").transform.GetChild(0).gameObject;
         _player = GameObject.FindGameObjectWithTag("Player");
-        _overlayPosition = _overlayCamera.transform.position + _overlayCamera.transform.forward * 4;
+        _overlayPosition = GameObject.FindGameObjectWithTag("OverlayCamera").transform.GetChild(0).position;
     }
 
     protected override void OnEnable()
     {
         base.OnEnable();
 
+        _overlayCamera.SetActive(true);
         _player.GetComponent<PlayerController>().DeactiveInput();
     }
 
@@ -32,6 +33,7 @@ public class UI_DetailView : UI_Popup
     {
         base.OnDisable();
 
+        _overlayCamera.SetActive(false);
         _player.GetComponent<PlayerController>().ActiveInput();
 
         if (_currentObject != null)
@@ -45,10 +47,9 @@ public class UI_DetailView : UI_Popup
     /// <summary>
     /// 오브젝트 갱신
     /// </summary>
-    public void UpdateObject(InteractionableEvidence newObject)
+    public void UpdateObject(InteractionableEvidence newObject, float position)
     {
-        GameObject instance = Instantiate(newObject._prefap, _overlayPosition, Quaternion.Euler(0f, 180f, 0f));
-        instance.transform.Translate(Vector3.down);
+        GameObject instance = Instantiate(newObject._prefap, _overlayPosition + new Vector3(0, 0, position), Quaternion.Euler(0f, 30f, 0f));
 
         Destroy(_overlayObject);
         _overlayObject = instance;
@@ -61,7 +62,7 @@ public class UI_DetailView : UI_Popup
     {
         if(_overlayObject != null)
         {
-            _overlayObject.transform.Rotate(Vector3.up * _rotateDegree);
+            _overlayObject.transform.Rotate(Vector3.forward * _rotateDegree);
         }
     }
 
@@ -69,7 +70,7 @@ public class UI_DetailView : UI_Popup
     {
         if(_overlayObject != null)
         {
-            _overlayObject.transform.Rotate(Vector3.down * _rotateDegree);
+            _overlayObject.transform.Rotate(Vector3.back * _rotateDegree);
         }
     }
 

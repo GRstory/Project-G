@@ -55,7 +55,14 @@ public class InteractionController : MonoBehaviour
     {
         foreach(Interactionable item in  _interactionableObjectList)
         {
-            if (item.gameObject.activeSelf == false)
+            if(item != null)
+            {
+                if (item.gameObject.activeSelf == false)
+                {
+                    _interactionableObjectList.Remove(item);
+                }
+            }
+            else
             {
                 _interactionableObjectList.Remove(item);
             }

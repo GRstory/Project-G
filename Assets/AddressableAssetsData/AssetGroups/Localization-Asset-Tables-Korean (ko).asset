@@ -14,13 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_GroupName: Localization-Asset-Tables-Korean (ko)
   m_GUID: 047c62610a4a56643b9e14551adf5ed3
-  m_SerializeEntries:
-  - m_GUID: bf97b8244949c8042bf768abc2d3d4c3
-    m_Address: SpriteTable_ko
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-ko
-    FlaggedDuringContentUpdateRestriction: 0
+  m_SerializeEntries: []
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 4f66436b569eb3d49898392e49bbc5b6, type: 2}
   m_SchemaSet:

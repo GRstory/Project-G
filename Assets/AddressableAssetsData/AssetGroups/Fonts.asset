@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Fonts
+  m_EditorClassIdentifier: 
+  m_GroupName: Fonts
+  m_GUID: f222b71cd64a0534ba3f06059b6fa793
+  m_SerializeEntries:
+  - m_GUID: 02db23a258747f04b87e94df4d519480
+    m_Address: Assets/AD_Resources/Font/Pretendard-700 SDF.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 47c4d1514ccd6b04f900984e6ad67b2f
+    m_Address: Assets/AD_Resources/Font/Pretendard-700.otf
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 72cd884f92331bb49a8c2b999a6338ea
+    m_Address: Assets/AD_Resources/Font/Pretendard-400.otf
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 87d0bc7625a2b444db9ad9c5b487f324
+    m_Address: Assets/AD_Resources/Font/Pretendard-400 SDF.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8a8cc4bb086034c42bd901c83abe8aca
+    m_Address: Assets/AD_Resources/Font/Pretendard-200 SDF.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c60a7bd5118b66c408fe333df67a69d0
+    m_Address: Assets/AD_Resources/Font/Pretendard-200.otf
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 4f66436b569eb3d49898392e49bbc5b6, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 167ffe3c5ea778d46bc3862bd216b967, type: 2}
+    - {fileID: 11400000, guid: 20d4e2fb4b0b00349b4844c0c41fa1eb, type: 2}

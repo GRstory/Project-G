@@ -4,6 +4,10 @@ using UnityEngine.Localization.Settings;
 using UnityEngine.Localization;
 using UnityEngine.UI;
 using System;
+using UnityEngine.U2D;
+using UnityEngine.AddressableAssets;
+using UnityEngine.ResourceManagement.AsyncOperations;
+using System.Text;
 
 public class UI_Achievement : UI_Popup
 {
@@ -61,23 +65,35 @@ public class UI_Achievement : UI_Popup
     [SerializeField] private TMP_Text _achievementText;
     [SerializeField] private TMP_Text _achievementDescriptionText;
     private int _isClear = 0;
+    private Color _disableColor = new Color(0.2f, 0.2f, 0.2f, 0.5f);
+    private Color _enableColor = new Color(1f, 1f, 1f);
 
     private void Start()
     {
+        Bind<GameObject>(typeof(Buttons));
         Bind<Button>(typeof(Buttons));
-        Bind<Image>(typeof(Images));
         Bind<TMP_Text>(typeof(Texts));
+        Bind<Image>(typeof(Images));
 
-        for(int i = 0; i < AchievementManager.Instance.MaxAchievementCount; i++)
+        Addressables.LoadAssetAsync<SpriteAtlas>("SA_Achievement").Completed += SetAllAchievementImage;
+
+        for (int i = 0; i < 18; i++)
         {
+            Get<GameObject>(i).SetActive(false);
+        }
+
+        for (int i = 0; i < AchievementManager.Instance.MaxAchievementCount; i++)
+        {
+            Get<GameObject>(i).SetActive(true);
             Button button = Get<Button>(i);
             int c = i;
             button.onClick.AddListener(() => UI_Acheivement_Btn(c));
         }
 
-        AddAllImageToLocalizeSpriteEvent("SpriteTable");
+
         AddAllTextToLocalizeStringEvent();
         LoadAchievementBit();
+
     }
 
     protected override void OnEnable()
@@ -100,7 +116,7 @@ public class UI_Achievement : UI_Popup
             {
                 if (image != null)
                 {
-                    image.color = new Color(0.3f, 0.3f, 0.3f);
+                    image.color = _disableColor;
                 }
 
             }
@@ -108,7 +124,7 @@ public class UI_Achievement : UI_Popup
             {
                 if (image != null)
                 {
-                    image.color = new Color(1f, 1f, 1f);
+                    image.color = _enableColor;
                 }
             }
         }
@@ -131,7 +147,17 @@ public class UI_Achievement : UI_Popup
             _achievementText.text = LocalizationSettings.StringDatabase.GetLocalizedString("AchievementTable", index.ToString(), currentLanguage);
             _achievementDescriptionText.text = LocalizationSettings.StringDatabase.GetLocalizedString("AchievementTable", index.ToString() + "_Description", currentLanguage);
         }
-
-
     }
+
+    private void SetAllAchievementImage(AsyncOperationHandle<SpriteAtlas> handle)
+    {
+        SpriteAtlas spriteAtlas = handle.Result;
+        for(int i = 0; i < AchievementManager.Instance.MaxAchievementCount; i++)
+        {
+            Get<Image>(i).sprite = spriteAtlas.GetSprite(i.ToString());
+        }
+
+        Addressables.Release(handle);
+    }
+
 }

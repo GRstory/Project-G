@@ -1,5 +1,6 @@
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class UI_PauseMenu : UI_Popup
 {
@@ -32,7 +33,13 @@ public class UI_PauseMenu : UI_Popup
 
     public void OnButtonClick_Button3()
     {
-        LoadingScene.LoadScene("MainScene");
+        UIManager.Instance.ChangeStaticUI(UIManager.Instance.MainUI);
+        FlowManager.Instance.Player.GetComponent<PlayerController>().DeactiveInput();
+
+        if (SceneManager.GetActiveScene().name != GameEnum.SceneName.MainScene.ToString())
+        {
+            LoadingScene.LoadScene(GameEnum.SceneName.MainScene.ToString());
+        }
     }
 
     public void OnButtonClick_Button4()

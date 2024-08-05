@@ -12,7 +12,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private InteractionController _interactionController;
     [SerializeField] private Transform _cameraTransform;
     private Vector2 _moveInput;
-    private bool _canMovePlayer = true;
+    [SerializeField] private bool _canMovePlayer = true;
 
     //일시정지
     public bool _isPaused = false;
@@ -26,8 +26,6 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
         FlowManager.Instance.Player = gameObject;
-        Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
     }
 
     private void Update()
@@ -87,34 +85,6 @@ public class PlayerController : MonoBehaviour
         _controller.Move(moveDir * Time.deltaTime * 10);
     }
 
-    //플레이어 조작시 Ray가 오브젝트를 인식 못하는 버그가 있음
-    /*private void ShootRayToTarget()
-    {
-        RaycastHit hit;
-        Vector3 rayOrigin = _playerCamera.ViewportToWorldPoint(new Vector3(0.5f, 0.5f, 0.0f));
-        Vector3 rayDir = _playerCamera.transform.forward * 3f;
-        Debug.DrawRay(rayOrigin, rayDir, Color.red, 0.1f);
-        if (Physics.Raycast(rayOrigin, rayDir, out hit, 3f))
-        {
-            GameObject target = hit.collider.gameObject;
-            InteractionableObject targetComponent = target.GetComponent<InteractionableObject>();
-
-            if (targetComponent == null)
-            {
-                if (_hudUI != null)
-                {
-                    _hudUI.SetInteractionText(0);
-                }
-            }
-            else
-            {
-                if (_hudUI != null)
-                {
-                    _hudUI.SetInteractionText(targetComponent.ID);
-                }
-            }
-        }
-    }*/
 
     private void InteractionToObject()
     {

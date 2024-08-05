@@ -35,22 +35,10 @@ MonoBehaviour:
     m_ReadOnly: 1
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 74d8788b7ca029f4db0b6dda0551e597
-    m_Address: Assets/Locale/SpriteTable Shared Data.asset
-    m_ReadOnly: 1
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 7e9ab0b7325a9554ea0147d3dca831aa
     m_Address: Assets/Locale/CollectableItem Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 8ce3c2bd60e19ba4eb35215c011b6c8a
-    m_Address: BasicSquareImage
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-en
-    - Locale-ko
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 92226535a42c53042891289ff59c33f6
     m_Address: Assets/Locale/Misc Shared Data.asset

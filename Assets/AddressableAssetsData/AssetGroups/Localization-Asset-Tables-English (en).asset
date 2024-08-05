@@ -14,13 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_GroupName: Localization-Asset-Tables-English (en)
   m_GUID: 480f233e602b1394cba60a7e922bea20
-  m_SerializeEntries:
-  - m_GUID: b2fd2534530fdd6468f78657bd4354b7
-    m_Address: SpriteTable_en
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-en
-    FlaggedDuringContentUpdateRestriction: 0
+  m_SerializeEntries: []
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 4f66436b569eb3d49898392e49bbc5b6, type: 2}
   m_SchemaSet:

@@ -6,6 +6,8 @@ public class UIManager : SingletonMonobehavior<UIManager>
 {
     private Stack<UI_Popup> _popupUIStack;
 
+    [SerializeField] private UI_Static _mainUI = null;
+    [SerializeField] private UI_Static _hudUI = null;
     [SerializeField] private UI_Popup _pauseUI = null;
     [SerializeField] private UI_Popup _chattingUI = null;
     [SerializeField] private UI_Popup _detailViewUI = null;
@@ -15,6 +17,8 @@ public class UIManager : SingletonMonobehavior<UIManager>
 
     [SerializeField] private UI_Static _staticUI;
 
+    public UI_Static MainUI { get { return _mainUI; } }
+    public UI_Static HUDUI { get { return _hudUI; } }
     public UI_Popup PauseUI { get { return _pauseUI; } }
     public UI_Popup ChattingUI { get { return _chattingUI; } }
     public UI_Popup DetailViewUI {  get { return _detailViewUI; } }
@@ -97,7 +101,11 @@ public class UIManager : SingletonMonobehavior<UIManager>
         }
         else
         {
-            OnActivePopupUI(_pauseUI);
+            UI_Main mainUI = _staticUI as UI_Main;
+            if (mainUI == null)
+            {
+                OnActivePopupUI(_pauseUI);
+            }
         }
     }
 
@@ -106,5 +114,13 @@ public class UIManager : SingletonMonobehavior<UIManager>
         if (_popupUIStack.Count > 0)
             return true;
         else return false;
+    }
+
+    public void CloseAllPopupUI()
+    {
+        while(_popupUIStack.Count > 0)
+        {
+            OnDeactivePopupUI();
+        }
     }
 }

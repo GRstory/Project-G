@@ -18,4 +18,10 @@ public class GameEnum
         Windowed = 3
     }
 
+    public enum SceneName
+    {
+        MainScene,
+        TestScene
+    }
+
 }
