@@ -40,40 +40,19 @@ public class UI_Achievement : UI_Popup
         UI_Achievement_Btn_16,
         UI_Achievement_Btn_17,
     }
-    enum Images
-    {
-        UI_Achievement_Btn_0,
-        UI_Achievement_Btn_1,
-        UI_Achievement_Btn_2,
-        UI_Achievement_Btn_3,
-        UI_Achievement_Btn_4,
-        UI_Achievement_Btn_5,
-        UI_Achievement_Btn_6,
-        UI_Achievement_Btn_7,
-        UI_Achievement_Btn_8,
-        UI_Achievement_Btn_9,
-        UI_Achievement_Btn_10,
-        UI_Achievement_Btn_11,
-        UI_Achievement_Btn_12,
-        UI_Achievement_Btn_13,
-        UI_Achievement_Btn_14,
-        UI_Achievement_Btn_15,
-        UI_Achievement_Btn_16,
-        UI_Achievement_Btn_17,
-    }
 
     [SerializeField] private TMP_Text _achievementText;
     [SerializeField] private TMP_Text _achievementDescriptionText;
-    private int _isClear = 0;
+    private int _isClear = -1;
     private Color _disableColor = new Color(0.2f, 0.2f, 0.2f, 0.5f);
     private Color _enableColor = new Color(1f, 1f, 1f);
 
-    private void Start()
+    private void Awake()
     {
         Bind<GameObject>(typeof(Buttons));
         Bind<Button>(typeof(Buttons));
         Bind<TMP_Text>(typeof(Texts));
-        Bind<Image>(typeof(Images));
+        Bind<Image>(typeof(Buttons));
 
         Addressables.LoadAssetAsync<SpriteAtlas>("SA_Achievement").Completed += SetAllAchievementImage;
 
@@ -82,7 +61,7 @@ public class UI_Achievement : UI_Popup
             Get<GameObject>(i).SetActive(false);
         }
 
-        for (int i = 0; i < AchievementManager.Instance.MaxAchievementCount; i++)
+        for (int i = 0; i < FlowManager.Instance.MaxAchievementCount; i++)
         {
             Get<GameObject>(i).SetActive(true);
             Button button = Get<Button>(i);
@@ -90,10 +69,8 @@ public class UI_Achievement : UI_Popup
             button.onClick.AddListener(() => UI_Acheivement_Btn(c));
         }
 
-
         AddAllTextToLocalizeStringEvent();
         LoadAchievementBit();
-
     }
 
     protected override void OnEnable()
@@ -105,26 +82,30 @@ public class UI_Achievement : UI_Popup
 
     private void LoadAchievementBit()
     {
-        _isClear = AchievementManager.Instance.GetClearBit();
-
-        for (int i = 0; i < AchievementManager.Instance.MaxAchievementCount; i++)
+        int isClear = FlowManager.Instance.ClearBit;
+        if(_isClear != isClear)
         {
-            int temp = 1 << i;
+            _isClear = isClear;
 
-            Image image = Get<Image>(i);
-            if ((_isClear & temp) == 0)
+            for (int i = 0; i < FlowManager.Instance.MaxAchievementCount; i++)
             {
-                if (image != null)
+                int temp = 1 << i;
+
+                Image image = Get<Image>(i);
+                if ((_isClear & temp) == 0)
                 {
-                    image.color = _disableColor;
+                    if (image != null)
+                    {
+                        image.color = _disableColor;
+                    }
+
                 }
-
-            }
-            else
-            {
-                if (image != null)
+                else
                 {
-                    image.color = _enableColor;
+                    if (image != null)
+                    {
+                        image.color = _enableColor;
+                    }
                 }
             }
         }
@@ -152,7 +133,7 @@ public class UI_Achievement : UI_Popup
     private void SetAllAchievementImage(AsyncOperationHandle<SpriteAtlas> handle)
     {
         SpriteAtlas spriteAtlas = handle.Result;
-        for(int i = 0; i < AchievementManager.Instance.MaxAchievementCount; i++)
+        for(int i = 0; i < FlowManager.Instance.MaxAchievementCount; i++)
         {
             Get<Image>(i).sprite = spriteAtlas.GetSprite(i.ToString());
         }

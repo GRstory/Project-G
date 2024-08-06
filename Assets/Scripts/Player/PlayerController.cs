@@ -6,6 +6,8 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
+    
+
     //¡∂¿€
     private CharacterController _controller;
     [SerializeField] private Camera _playerCamera;

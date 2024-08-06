@@ -12,7 +12,6 @@ public class UI_Main : UI_Static
 {
     [SerializeField] private UI_Static _hudUI;
     [SerializeField] private AssetReference _logoAssetRef;
-    public GameObject _inputObject = null;
     public GameObject _shakingCamera = null;
 
     public Vector3 _mainScenePlayerPosition = Vector3.zero;
@@ -50,11 +49,11 @@ public class UI_Main : UI_Static
     {
         base.OnEnable();
 
-        _inputObject.SetActive(true);
+        if (_shakingCamera == null) _shakingCamera = GameObject.FindGameObjectWithTag("ShakingCamera");
         _shakingCamera.SetActive(true);
         _shakingCamera.GetComponent<CinemachineCamera>().Priority = 110;
-
-        if(_mainScenePlayerPosition != Vector3.zero)
+        FlowManager.Instance.Player.GetComponent<PlayerController>().DeactiveInput();
+        if (_mainScenePlayerPosition != Vector3.zero)
         {
             FlowManager.Instance.Player.transform.position = _mainScenePlayerPosition;
         }
@@ -64,7 +63,6 @@ public class UI_Main : UI_Static
     {
         UIManager.Instance.ChangeStaticUI(_hudUI);
 
-        _inputObject.SetActive(false);
         _shakingCamera.GetComponent<CinemachineCamera>().Priority = 0;
         Invoke("DisableShakingCamera", 1f);
         FlowManager.Instance.Player.GetComponent<PlayerController>().ActiveInput();

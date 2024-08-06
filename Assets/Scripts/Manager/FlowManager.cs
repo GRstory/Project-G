@@ -19,11 +19,24 @@ public struct CollectableItem
 
 public class FlowManager : SingletonMonobehavior<FlowManager>
 {
+    //Save
+    [SerializeField] private SaveSetting _saveSetting = new SaveSetting();
+    private string _saveSettingPath = "save.bin";
+
+    //Player
     [SerializeField] private GameObject _player = null;
+
+    //Inventory
     [SerializeField] private Dictionary<int, CollectableItem> _collectableItemDict;
     [SerializeField] private List<CollectableItem> _currentCollectableItemList;
 
+    //Achievement
+    [SerializeField] private int _maxAchievementCount = 6;
+
+    public int MaxAchievementCount { get { return _maxAchievementCount; } }
     public GameObject Player {  get { return _player; }  set { _player = value; } }
+    public SaveSetting SaveSetting { get { return _saveSetting; } set { _saveSetting = value; } }
+    public int ClearBit { get { return _saveSetting.achievement; } set { _saveSetting.achievement = value; } }
 
     protected override void Awake()
     {
@@ -95,5 +108,43 @@ public class FlowManager : SingletonMonobehavior<FlowManager>
     public List<CollectableItem> GetCollectableItemList()
     {
         return _currentCollectableItemList;
+    }
+
+    /// <summary>
+    /// 달성한 도전과제 인덱스를 받아 비트연산을 시행합니다.
+    /// </summary>
+    public void ClearAchievement(int index)
+    {
+        int temp = 1 << index;
+        _saveSetting.achievement = _saveSetting.achievement | temp;
+        SaveManager.Instance.Save(_saveSetting, _saveSettingPath);
+    }
+
+    /// <summary>
+    /// 클리어한 레벨 인덱스와 별점을 받아 수정합니다.
+    /// </summary>
+    public void ClearLevel(int level, int star)
+    {
+        _saveSetting.clearLevel = level;
+
+        if(_saveSetting.clearStars.Length >= level)
+        {
+            if (_saveSetting.clearStars[level] < star)
+            {
+                _saveSetting.clearStars[level] = star;
+            }
+        }
+
+        SaveManager.Instance.Save(_saveSetting, _saveSettingPath);
+    }
+
+    public void LoadGame()
+    {
+        _saveSetting = SaveManager.Instance.Load(_saveSettingPath);
+    }
+
+    public void SaveGame()
+    {
+        SaveManager.Instance.Save(_saveSetting, _saveSettingPath);
     }
 }

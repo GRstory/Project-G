@@ -8,6 +8,7 @@ public class StartScene : MonoBehaviour
     private void Start()
     {
         _StartCanvas.SetActive(true);
+        FlowManager.Instance.LoadGame();
         StartCoroutine(StartGameCoroutine());
     }
 
