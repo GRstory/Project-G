@@ -11,7 +11,6 @@ using UnityEngine.Localization;
 
 public class UI_Chatting : UI_Popup
 {
-    private GameObject _player;
     private InteractionableNPC _currentNPC = null;
     private NPCController _currentController = null;
 
@@ -24,7 +23,7 @@ public class UI_Chatting : UI_Popup
 
     private void Awake()
     {
-        _player = GameObject.FindGameObjectWithTag("Player");
+
     }
 
     private void Start()
@@ -36,15 +35,11 @@ public class UI_Chatting : UI_Popup
     protected override void OnEnable()
     {
         base.OnEnable();
-
-        _player.GetComponent<PlayerMovementAdvanced>().DeactiveInput();
     }
 
     protected override void OnDisable()
     {
         base.OnDisable();
-
-        _player.GetComponent<PlayerMovementAdvanced>().ActiveInput();
 
         if(_currentNPC != null)
         {

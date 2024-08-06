@@ -75,6 +75,8 @@ public class PlayerMovementAdvanced : MonoBehaviour
         grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f, whatIsGround);
 
         if (_canMovePlayer) MyInput();
+
+        Escape();
         SpeedControl();
         StateHandler();
 
@@ -119,7 +121,6 @@ public class PlayerMovementAdvanced : MonoBehaviour
         }
 
         Interaction();
-        Escape();
     }
 
     private void StateHandler()

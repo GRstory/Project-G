@@ -8,6 +8,7 @@ public class SceneController : MonoBehaviour
     protected virtual void OnEnable()
     {
         FlowManager.Instance.Player.transform.position = _spawnPoint.position;
+        FlowManager.Instance.Player.transform.rotation = _spawnPoint.rotation;
         StartCoroutine(PlayerSpawnPointCoroutine());
     }
 
@@ -15,5 +16,6 @@ public class SceneController : MonoBehaviour
     {
         yield return new WaitForSeconds(0.2f);
         FlowManager.Instance.Player.transform.position = _spawnPoint.position;
+        FlowManager.Instance.Player.transform.rotation = _spawnPoint.rotation;
     }
 }

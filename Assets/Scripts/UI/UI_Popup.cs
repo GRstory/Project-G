@@ -7,5 +7,11 @@ public class UI_Popup : UI_Base
         base.OnEnable();
 
         System.GC.Collect();
+        FlowManager.Instance.Player.GetComponent<PlayerMovementAdvanced>().DeactiveInput();
+    }
+
+    protected override void OnDisable()
+    {
+        FlowManager.Instance.Player.GetComponent<PlayerMovementAdvanced>().ActiveInput();
     }
 }
