@@ -52,7 +52,7 @@ public class UI_Inventory : UI_Popup
         }
         
 
-        FlowManager.Instance.Player.GetComponent<PlayerController>().DeactiveInput();
+        FlowManager.Instance.Player.GetComponent<PlayerMovementAdvanced>().DeactiveInput();
     }
 
     protected override void OnDisable()
@@ -63,7 +63,6 @@ public class UI_Inventory : UI_Popup
         {
             _itemArray[i].gameObject.SetActive(false);
         }
-        FlowManager.Instance.Player.GetComponent<PlayerController>().ActiveInput();
-        FlowManager.Instance.Player.GetComponent<PlayerController>()._isInventory = false;
+        FlowManager.Instance.Player.GetComponent<PlayerMovementAdvanced>().ActiveInput();
     }
 }

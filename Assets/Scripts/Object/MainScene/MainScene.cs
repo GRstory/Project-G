@@ -1,13 +1,10 @@
 using UnityEngine;
 
-public class MainScene : MonoBehaviour
-{
-    public GameObject _shakingCamera;
-
-    private void OnEnable()
+public class MainScene : SceneController
+{ 
+    protected override void OnEnable()
     {
-        _shakingCamera = GameObject.FindGameObjectWithTag("ShakingCamera");
-
+        base.OnEnable();
         UIManager.Instance.ChangeStaticUI(UIManager.Instance.MainUI);
     }
 }

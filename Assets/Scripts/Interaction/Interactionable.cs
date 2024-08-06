@@ -28,6 +28,8 @@ public class Interactionable : MonoBehaviour
     protected virtual void Init()
     {
         _waitForSeconds = new WaitForSeconds(_coolDownTime);
+
+        gameObject.layer = 8;
     }
 
     public void TryInteraction(Transform fromTransform)

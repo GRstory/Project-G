@@ -1,11 +1,7 @@
-using System.Collections;
-using System.Reflection;
 using TMPro;
 using Unity.Cinemachine;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
-using UnityEngine.Localization.Components;
 using UnityEngine.UI;
 
 public class UI_Main : UI_Static
@@ -35,7 +31,7 @@ public class UI_Main : UI_Static
     {
         base.Start();
 
-        FlowManager.Instance.Player.GetComponent<PlayerController>().DeactiveInput();
+        FlowManager.Instance.Player.GetComponent<PlayerMovementAdvanced>().DeactiveInput();
         UIManager.Instance.ChangeStaticUI(this);
 
         Bind<Button>(typeof(Buttons));
@@ -43,6 +39,8 @@ public class UI_Main : UI_Static
         
         AddAllTextToLocalizeStringEvent();
         BindAllButtonToOnClickFunc();
+
+        _mainScenePlayerPosition = FlowManager.Instance.Player.transform.position;
     }
 
     protected override void OnEnable()
@@ -50,9 +48,12 @@ public class UI_Main : UI_Static
         base.OnEnable();
 
         if (_shakingCamera == null) _shakingCamera = GameObject.FindGameObjectWithTag("ShakingCamera");
-        _shakingCamera.SetActive(true);
-        _shakingCamera.GetComponent<CinemachineCamera>().Priority = 110;
-        FlowManager.Instance.Player.GetComponent<PlayerController>().DeactiveInput();
+        if (_shakingCamera != null) _shakingCamera.SetActive(true);
+        if (_shakingCamera != null) _shakingCamera.GetComponent<CinemachineCamera>().Priority = 110;
+
+        GameObject obj = FlowManager.Instance.Player;
+        PlayerMovementAdvanced adv = obj.GetComponent<PlayerMovementAdvanced>();
+        adv.DeactiveInput();
         if (_mainScenePlayerPosition != Vector3.zero)
         {
             FlowManager.Instance.Player.transform.position = _mainScenePlayerPosition;
@@ -65,7 +66,7 @@ public class UI_Main : UI_Static
 
         _shakingCamera.GetComponent<CinemachineCamera>().Priority = 0;
         Invoke("DisableShakingCamera", 1f);
-        FlowManager.Instance.Player.GetComponent<PlayerController>().ActiveInput();
+        FlowManager.Instance.Player.GetComponent<PlayerMovementAdvanced>().ActiveInput();
     }
 
     public void UI_Main_Btn_2()

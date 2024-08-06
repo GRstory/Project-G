@@ -34,14 +34,14 @@ public class UI_Setting : UI_Popup
     {
         base.OnEnable();
 
-        FlowManager.Instance.Player.GetComponent<PlayerController>().DeactiveInput();
+        FlowManager.Instance.Player.GetComponent<PlayerMovementAdvanced>().DeactiveInput();
     }
 
     protected override void OnDisable()
     {
         base.OnDisable();
 
-        FlowManager.Instance.Player.GetComponent<PlayerController>().ActiveInput();
+        FlowManager.Instance.Player.GetComponent<PlayerMovementAdvanced>().ActiveInput();
     }
 
     public void OnTabButtonClick(int index)

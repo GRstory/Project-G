@@ -62,6 +62,8 @@ public class UI_HUD : UI_Static
             GameObject obj = _alarmTextQueue.Dequeue();
             Destroy(obj);
         }
+
+        _interactionText.text = _clearText;
     }
 
     private void SetInteractionText(int id)

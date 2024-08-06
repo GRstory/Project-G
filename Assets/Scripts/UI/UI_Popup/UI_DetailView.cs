@@ -26,7 +26,7 @@ public class UI_DetailView : UI_Popup
         base.OnEnable();
 
         _overlayCamera.SetActive(true);
-        _player.GetComponent<PlayerController>().DeactiveInput();
+        _player.GetComponent<PlayerMovementAdvanced>().DeactiveInput();
     }
 
     protected override void OnDisable()
@@ -34,7 +34,7 @@ public class UI_DetailView : UI_Popup
         base.OnDisable();
 
         _overlayCamera.SetActive(false);
-        _player.GetComponent<PlayerController>().ActiveInput();
+        _player.GetComponent<PlayerMovementAdvanced>().ActiveInput();
 
         if (_currentObject != null)
         {

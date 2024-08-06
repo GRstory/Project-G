@@ -8,7 +8,6 @@ public class SceneChangeObject : InteractionableObject
     {
         base.Interaction(fromTransform);
 
-        Debug.Log("¿Ãµø!");
         if(_sceneName != GameEnum.SceneName.MainScene)
         {
             UI_Main main = UIManager.Instance.StaticUI as UI_Main;

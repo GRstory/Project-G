@@ -7,7 +7,6 @@ using UnityEngine.UI;
 public class InteractionController : MonoBehaviour
 {
     [SerializeField] public List<Interactionable> _interactionableObjectList = null;
-    private UI_HUD _hudUI;
 
     public List<Interactionable> InteractionableObjectList { get { return _interactionableObjectList; } set { _interactionableObjectList = value; } }
 
@@ -15,7 +14,6 @@ public class InteractionController : MonoBehaviour
     private void Start()
     {
         _interactionableObjectList = new List<Interactionable>();
-        _hudUI = UIManager.Instance.StaticUI as UI_HUD;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -97,7 +95,14 @@ public class InteractionController : MonoBehaviour
     {
         if (_interactionableObjectList.Count > 0)
         {
-            EventHandler.CallChangeInteractionableText(_interactionableObjectList[0].ID);
+            if(_interactionableObjectList[0] != null)
+            {
+                EventHandler.CallChangeInteractionableText(_interactionableObjectList[0].ID);
+            }
+            else
+            {
+                RemoveInteractionableObjectList(_interactionableObjectList[0]);
+            }
         }
         else
         {

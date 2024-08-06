@@ -8,9 +8,4 @@ public class NPCController : MonoBehaviour
     {
         _animator = GetComponent<Animator>();
     }
-
-    public void Test()
-    {
-        _animator.SetTrigger("itch");
-    }
 }

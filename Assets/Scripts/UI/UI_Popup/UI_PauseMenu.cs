@@ -34,7 +34,7 @@ public class UI_PauseMenu : UI_Popup
     public void OnButtonClick_Button3()
     {
         UIManager.Instance.ChangeStaticUI(UIManager.Instance.MainUI);
-        FlowManager.Instance.Player.GetComponent<PlayerController>().DeactiveInput();
+        FlowManager.Instance.Player.GetComponent<PlayerMovementAdvanced>().DeactiveInput();
 
         if (SceneManager.GetActiveScene().name != GameEnum.SceneName.MainScene.ToString())
         {

@@ -36,4 +36,9 @@ public class UI_Debug : MonoBehaviour
         FlowManager.Instance.LoadGame();
     }
 
+    public void MoveSpawn()
+    {
+        FlowManager.Instance.Player.transform.position = Vector3.zero;
+    }
+
 }

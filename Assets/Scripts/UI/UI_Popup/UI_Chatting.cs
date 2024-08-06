@@ -13,7 +13,7 @@ public class UI_Chatting : UI_Popup
 {
     private GameObject _player;
     private InteractionableNPC _currentNPC = null;
-    private NPCController _currentAnimator = null;
+    private NPCController _currentController = null;
 
     public TMP_InputField _inputField;
     public TMP_Text _npcText;
@@ -37,14 +37,14 @@ public class UI_Chatting : UI_Popup
     {
         base.OnEnable();
 
-        _player.GetComponent<PlayerController>().DeactiveInput();
+        _player.GetComponent<PlayerMovementAdvanced>().DeactiveInput();
     }
 
     protected override void OnDisable()
     {
         base.OnDisable();
 
-        _player.GetComponent<PlayerController>().ActiveInput();
+        _player.GetComponent<PlayerMovementAdvanced>().ActiveInput();
 
         if(_currentNPC != null)
         {
@@ -58,13 +58,8 @@ public class UI_Chatting : UI_Popup
     public void UpdateNPC(InteractionableNPC newNPC)
     {
         _currentNPC = newNPC;
-        _currentAnimator = newNPC.transform.GetComponent<NPCController>();
+        _currentController = newNPC.transform.GetComponent<NPCController>();
         StartConversation();
-    }
-
-    public void TryChatToChatGPT(string input)
-    {
-
     }
 
     private void StartConversation()
@@ -135,11 +130,5 @@ public class UI_Chatting : UI_Popup
         //Okbtn다시 활성화
         _sendButton.enabled = true;
 
-        ItchNPC();
-    }
-
-    private void ItchNPC()
-    {
-        _currentAnimator.Test();
     }
 }

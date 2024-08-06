@@ -2,11 +2,14 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class StartScene : MonoBehaviour
+public class StartScene : SceneController
 {
     [SerializeField] GameObject _StartCanvas;
-    private void Start()
+
+    protected override void OnEnable()
     {
+        base.OnEnable();
+
         _StartCanvas.SetActive(true);
         FlowManager.Instance.LoadGame();
         StartCoroutine(StartGameCoroutine());

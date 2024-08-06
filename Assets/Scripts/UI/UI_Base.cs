@@ -46,8 +46,6 @@ public class UI_Base : MonoBehaviour
             if (objects[i] == null)
                 Debug.Log($"Failed to bind({names[i]})");
         }
-
-        int a = 1;
     }
 
     protected T Get<T>(int idx) where T : UnityEngine.Object

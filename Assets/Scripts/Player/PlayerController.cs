@@ -4,19 +4,18 @@ using UnityEngine;
 using Unity.Cinemachine;
 using UnityEngine.InputSystem;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController2 : MonoBehaviour
 {
-    
-
-    //Á¶ÀÛ
+    //Move
     private CharacterController _controller;
-    [SerializeField] private Camera _playerCamera;
     [SerializeField] private InteractionController _interactionController;
     [SerializeField] private Transform _cameraTransform;
     private Vector2 _moveInput;
     [SerializeField] private bool _canMovePlayer = true;
 
-    //ÀÏ½ÃÁ¤Áö
+    private bool _grounded = true;
+
+    //ï¿½Ï½ï¿½ï¿½ï¿½ï¿½ï¿½
     public bool _isPaused = false;
     public bool _isInventory = false;
 
@@ -64,7 +63,7 @@ public class PlayerController : MonoBehaviour
 
     public void ActionEscape(InputAction.CallbackContext context)
     {
-        if(context.performed)
+        if (context.performed)
         {
             UIManager.Instance.OnDeactivePopupUI();
         }
@@ -83,7 +82,7 @@ public class PlayerController : MonoBehaviour
     {
         Vector3 moveDir = _cameraTransform.forward * _moveInput.y + _cameraTransform.right * _moveInput.x;
         moveDir.y = 0;
-        
+
         _controller.Move(moveDir * Time.deltaTime * 10);
     }
 
