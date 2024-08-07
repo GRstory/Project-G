@@ -24,4 +24,9 @@ public class GameEnum
         TestScene
     }
 
+    public enum  SoundType
+    {
+        BGM,
+        Effect
+    }
 }

@@ -14,7 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_GroupName: Default Local Group
   m_GUID: 2abd6fc3618918846b0c9ceb5549324c
-  m_SerializeEntries: []
+  m_SerializeEntries:
+  - m_GUID: 322838867bc3b7d4daaeb8f587a10597
+    m_Address: Assets/AD_Resources/Audio/MainBGM.wav
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 4f66436b569eb3d49898392e49bbc5b6, type: 2}
   m_SchemaSet:

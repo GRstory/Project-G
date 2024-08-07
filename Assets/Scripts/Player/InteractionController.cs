@@ -2,11 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class InteractionController : MonoBehaviour
 {
+    [SerializeField] private Material _highlightMaterial;
     [SerializeField] public List<Interactionable> _interactionableObjectList = null;
+    private Dictionary<string, Material> _materialDict = new Dictionary<string, Material>();
+
 
     public List<Interactionable> InteractionableObjectList { get { return _interactionableObjectList; } set { _interactionableObjectList = value; } }
 
@@ -14,16 +18,33 @@ public class InteractionController : MonoBehaviour
     private void Start()
     {
         _interactionableObjectList = new List<Interactionable>();
+        SceneManager.sceneLoaded += CallEventSceneChange;
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.transform.GetComponent<Interactionable>() != null)
+        Interactionable interactionable = other.transform.GetComponent<Interactionable>();
+        if (interactionable != null)
         {
-            _interactionableObjectList.Add(other.transform.GetComponent<Interactionable>());
-        }
+            _interactionableObjectList.Add(interactionable);
+            /*if(_materialDict.TryGetValue(interactionable.GUID, out Material mat))
+            {
+                
+            }
+            else
+            {
+                MeshRenderer meshRenderer = other.GetComponent<MeshRenderer>();
+                if (meshRenderer != null)
+                {
+                    Material originalMaterial = other.GetComponent<MeshRenderer>().material;
+                    _materialDict.Add(interactionable.GUID, originalMaterial);
+                }
+            }
 
-        CallEventHandlerChangeInteractionaText();
+            SortInteractionablebject();
+            ChangeObjectMaterialToHighlight(_interactionableObjectList[0]);*/
+            CallEventHandlerChangeInteractionaText();
+        }
     }
 
     private void OnTriggerExit(Collider other)
@@ -31,9 +52,10 @@ public class InteractionController : MonoBehaviour
         if (other.transform.GetComponent<Interactionable>() != null)
         {
             _interactionableObjectList.Remove(other.transform.GetComponent<Interactionable>());
-        }
 
-        CallEventHandlerChangeInteractionaText();
+            //ChangeObjectMaterialToOriginal(other.transform.GetComponent<Interactionable>());
+            CallEventHandlerChangeInteractionaText();
+        }
     }
 
     private void SortInteractionablebject()
@@ -67,6 +89,28 @@ public class InteractionController : MonoBehaviour
         }
     }
 
+    private void ChangeObjectMaterialToHighlight(Interactionable interactionable)
+    {
+        MeshRenderer meshRenderer = interactionable.GetComponent<MeshRenderer>();
+        if(meshRenderer != null)
+        {
+            meshRenderer.material = _highlightMaterial;
+        }
+        for(int i = 1; i < _interactionableObjectList.Count; i++)
+        {
+            ChangeObjectMaterialToHighlight(_interactionableObjectList[i]);
+        }
+    }
+
+    private void ChangeObjectMaterialToOriginal(Interactionable interactionable)
+    {
+        if(_materialDict.TryGetValue(interactionable.GUID, out Material originalMaterial))
+        {
+            interactionable.GetComponent<MeshRenderer>().material = originalMaterial;
+        }
+        
+    }
+
     /// <summary>
     /// Collider에 충돌한 사용가능한 아이템 중 제일 가까운 아이템과 상호작용 시도
     /// </summary>
@@ -91,17 +135,27 @@ public class InteractionController : MonoBehaviour
         }
     }
 
+    private void CallEventSceneChange(Scene scene, LoadSceneMode mode)
+    {
+        _interactionableObjectList.Clear();
+        CallEventHandlerChangeInteractionaText();
+    }
+
     private void CallEventHandlerChangeInteractionaText()
     {
         if (_interactionableObjectList.Count > 0)
         {
-            if(_interactionableObjectList[0] != null)
+            while (_interactionableObjectList[0] == null)
+            {
+                RemoveInteractionableObjectList(_interactionableObjectList[0]);
+            }
+            if(_interactionableObjectList.Count > 0)
             {
                 EventHandler.CallChangeInteractionableText(_interactionableObjectList[0].ID);
             }
             else
             {
-                RemoveInteractionableObjectList(_interactionableObjectList[0]);
+                EventHandler.CallChangeInteractionableText(0);
             }
         }
         else

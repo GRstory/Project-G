@@ -4,14 +4,17 @@ public class SceneChangeObject : InteractionableObject
 {
     public GameEnum.SceneName _sceneName;
 
-    protected override void Interaction(Transform fromTransform)
+    protected override void OverInteractionCount()
     {
-        base.Interaction(fromTransform);
+        
+    }
 
-        if(_sceneName != GameEnum.SceneName.MainScene)
+    protected override void ProgressInteraction()
+    {
+        if (_sceneName != GameEnum.SceneName.MainScene)
         {
             UI_Main main = UIManager.Instance.StaticUI as UI_Main;
-            if(main != null)
+            if (main != null)
             {
                 main._mainScenePlayerPosition = FlowManager.Instance.Player.transform.position;
             }

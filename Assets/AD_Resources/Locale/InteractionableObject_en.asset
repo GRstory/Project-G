@@ -59,7 +59,23 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 2786053842669568
-    m_Localized: Door
+    m_Localized: Bathroom Door
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2790960700198912
+    m_Localized: Fridge
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2790978056228864
+    m_Localized: Freezer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2794558838411264
+    m_Localized: Bathroom Door Key
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2815098416402432
+    m_Localized: Washstand
     m_Metadata:
       m_Items: []
   references:

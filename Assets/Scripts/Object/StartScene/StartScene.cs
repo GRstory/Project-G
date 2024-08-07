@@ -17,7 +17,7 @@ public class StartScene : SceneController
 
     private IEnumerator StartGameCoroutine()
     {
-        yield return new WaitForSecondsRealtime(0.5f);
+        yield return new WaitForSecondsRealtime(1.5f);
 
         SceneManager.LoadScene("MainScene");
     }

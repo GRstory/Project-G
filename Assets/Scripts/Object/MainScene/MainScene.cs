@@ -6,5 +6,6 @@ public class MainScene : SceneController
     {
         base.OnEnable();
         UIManager.Instance.ChangeStaticUI(UIManager.Instance.MainUI);
+        SoundManager.Instance.PlaySound2D("MainBGM", 0, true, GameEnum.SoundType.BGM);
     }
 }

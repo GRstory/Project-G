@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Interactionable : MonoBehaviour
 {
-    [SerializeField] private string _name = "Interactionable";
+    [SerializeField] private string _guid = "";
     [SerializeField] protected int _id = 0;
     [SerializeField] protected GameEnum.InteractionType _interactionType = GameEnum.InteractionType.None;
     protected float _coolDownTime = 2f;
@@ -14,11 +14,23 @@ public class Interactionable : MonoBehaviour
 
     private WaitForSeconds _waitForSeconds = null;
 
-    public string Name { get { return _name; } }
+    public string GUID { get { return _guid; } }
     public int ID { get { return _id; } }
     public GameEnum.InteractionType interactionType { get { return _interactionType; } }
     public int InteractionCount { get { return _interactionCount; } }
     public bool CanInteraction { get { return _canInteraction; } }
+
+    protected virtual void Awake()
+    {
+        if (!Application.IsPlaying(gameObject))
+        {
+            if (_guid == "")
+            {
+                _guid = System.Guid.NewGuid().ToString();
+            }
+        }
+        _guid = System.Guid.NewGuid().ToString();
+    }
 
     protected virtual void Start()
     {

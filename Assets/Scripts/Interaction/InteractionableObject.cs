@@ -2,9 +2,10 @@ using UnityEngine;
 using UnityEngine.Localization.Settings;
 using UnityEngine.Localization;
 
-public class InteractionableObject : Interactionable
+public abstract class InteractionableObject : Interactionable
 {
     [SerializeField] private int _requireItemid = 0;
+    [SerializeField] private bool _infinityInteraction = false;
     private bool _alreadyInteraction = false;
     private static string _failedAlarmString1 = "Alarm_RequiredItem_1";
     private static string _failedAlarmString2 = "Alarm_RequiredItem_2";
@@ -13,7 +14,7 @@ public class InteractionableObject : Interactionable
     {
         base.Interaction(fromTransform);
 
-        if (_alreadyInteraction == true)
+        if (_infinityInteraction == false && _alreadyInteraction == true)
         {
             OverInteractionCount();
             return;
@@ -44,13 +45,7 @@ public class InteractionableObject : Interactionable
         
     }
 
-    protected virtual void OverInteractionCount()
-    {
+    protected abstract void OverInteractionCount();
 
-    }
-
-    protected virtual void ProgressInteraction()
-    {
-
-    }
+    protected abstract void ProgressInteraction();
 }
