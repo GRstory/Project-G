@@ -10,44 +10,44 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
-  m_Name: InteractionableObject_en
+  m_Name: InteractionableObject_ko
   m_EditorClassIdentifier: 
   m_LocaleId:
-    m_Code: en
+    m_Code: ko
   m_SharedData: {fileID: 11400000, guid: 2779e0278602f26448af8a659c4250ee, type: 2}
   m_Metadata:
     m_Items: []
   m_TableData:
   - m_Id: 38266605568
-    m_Localized: TEST 10000
+    m_Localized: "\uD14C\uC2A4\uD2B8 10000"
     m_Metadata:
       m_Items: []
   - m_Id: 159528128512
-    m_Localized: TEST 10001
+    m_Localized: "\uD14C\uC2A4\uD2B8 10001"
     m_Metadata:
       m_Items: []
   - m_Id: 258535407357952
-    m_Localized: Robot 10100
+    m_Localized: "\uB85C\uBD07 10100"
     m_Metadata:
       m_Items: []
   - m_Id: 259836669202432
-    m_Localized: Robot 10101
+    m_Localized: "\uB85C\uBD07 10101"
     m_Metadata:
       m_Items: []
   - m_Id: 269953628246016
-    m_Localized: Item 10200
+    m_Localized: "\uC544\uC774\uD15C 10200"
     m_Metadata:
       m_Items: []
   - m_Id: 368691046649856
-    m_Localized: Item 10500
+    m_Localized: "\uC544\uC774\uD15C 10500"
     m_Metadata:
       m_Items: []
   - m_Id: 609124813246464
-    m_Localized: Item 10501
+    m_Localized: "\uC544\uC774\uD15C 10501"
     m_Metadata:
       m_Items: []
   - m_Id: 669128106840064
-    m_Localized: Furniture 10700
+    m_Localized: "\uAC00\uAD6C 10700"
     m_Metadata:
       m_Items: []
   - m_Id: 7434276864
@@ -55,7 +55,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 2182679657058304
-    m_Localized: Move to first crime scene...
+    m_Localized: "\uCCAB\uBC88\uC9F8 \uBC94\uC8C4\uD604\uC7A5\uC73C\uB85C \uC774\uB3D9..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2786053842669568
+    m_Localized: "\uBB38"
     m_Metadata:
       m_Items: []
   references:
