@@ -33,10 +33,14 @@ public class FlowManager : SingletonMonobehavior<FlowManager>
     //Achievement
     [SerializeField] private int _maxAchievementCount = 6;
 
+    //SceneController
+    [SerializeField] private SceneController _sceneController;
+
     public int MaxAchievementCount { get { return _maxAchievementCount; } }
-    public GameObject Player {  get { return _player; }  set { _player = value; } }
+    public GameObject Player { get { return _player; } set { _player = value; } }
     public SaveSetting SaveSetting { get { return _saveSetting; } set { _saveSetting = value; } }
     public int ClearBit { get { return _saveSetting.achievement; } set { _saveSetting.achievement = value; } }
+    public SceneController SceneController { get { return _sceneController; } set { _sceneController = value; } }
 
     protected override void Awake()
     {

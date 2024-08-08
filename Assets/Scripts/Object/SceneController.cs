@@ -9,6 +9,7 @@ public class SceneController : MonoBehaviour
     {
         FlowManager.Instance.Player.transform.position = _spawnPoint.position;
         FlowManager.Instance.Player.transform.rotation = _spawnPoint.rotation;
+        FlowManager.Instance.SceneController = this;
         StartCoroutine(PlayerSpawnPointCoroutine());
     }
 

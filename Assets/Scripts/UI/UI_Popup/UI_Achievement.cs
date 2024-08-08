@@ -3,11 +3,9 @@ using UnityEngine;
 using UnityEngine.Localization.Settings;
 using UnityEngine.Localization;
 using UnityEngine.UI;
-using System;
 using UnityEngine.U2D;
 using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.AsyncOperations;
-using System.Text;
 
 public class UI_Achievement : UI_Popup
 {
@@ -138,7 +136,7 @@ public class UI_Achievement : UI_Popup
             Get<Image>(i).sprite = spriteAtlas.GetSprite(i.ToString());
         }
 
-        Addressables.Release(handle);
+        //Addressables.Release(handle);
     }
 
 }
