@@ -132,8 +132,6 @@ public class UI_Chatting : UI_Popup
 
     public async void UI_Chatting_Btn_Send()
     {
-        Debug.Log("UI_Chatting_Btn_Send");
-
         if (_inputField.text.Length < 1)
         {
             return;
@@ -149,7 +147,6 @@ public class UI_Chatting : UI_Popup
         {
             userMessage.Content = userMessage.Content.Substring(0, 100);
         }
-        //Debug.Log(string.Format("{0} : {1}", userMessage.Role, userMessage.Content));
 
         //list에 메세지 추가
         _messageList.Add(userMessage);
@@ -173,7 +170,6 @@ public class UI_Chatting : UI_Popup
         ChatMessage responseMessage = new ChatMessage();
         responseMessage.Role = chatResult.Choices[0].Message.Role;
         responseMessage.Content = chatResult.Choices[0].Message.Content;
-        //Debug.Log(string.Format("{0}: {1}", responseMessage.rawRole, responseMessage.Content));
 
         //응답을 message리스트에 추가
         _messageList.Add(responseMessage);
@@ -189,8 +185,6 @@ public class UI_Chatting : UI_Popup
             UI_Chatting_Log log = handle.Result.GetComponent<UI_Chatting_Log>();
             if(log != null)
             {
-                Debug.Log(userMessage.Content);
-                Debug.Log(responseMessage.Content);
                 log.SetText(userMessage.Content, responseMessage.Content);
             }
         };
