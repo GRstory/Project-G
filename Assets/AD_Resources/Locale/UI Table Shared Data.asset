@@ -71,28 +71,48 @@ MonoBehaviour:
     m_Key: UI_Chatting
     m_Metadata:
       m_Items: []
-  - m_Id: 7307918184457
-    m_Key: UI_Chatting_Title
+  - m_Id: 3717153112854528
+    m_Key: UI_Chatting_Text_Title
     m_Metadata:
       m_Items: []
-  - m_Id: 7307918184458
-    m_Key: UI_Chatting_SubTitle
+  - m_Id: 3717153138020352
+    m_Key: UI_Chatting_Text_SubTitle
     m_Metadata:
       m_Items: []
-  - m_Id: 7307918184459
-    m_Key: UI_Chatting_ESC
+  - m_Id: 3717153138020353
+    m_Key: UI_Chatting_Text_ESC
     m_Metadata:
       m_Items: []
   - m_Id: 15063018508288
     m_Key: UI_Chatting_InputFiled_PlaceHolder
     m_Metadata:
       m_Items: []
-  - m_Id: 51388052541440
-    m_Key: UI_Chatting_Btn1
+  - m_Id: 3717153138020354
+    m_Key: UI_Chatting_Text_0
     m_Metadata:
       m_Items: []
-  - m_Id: 51481849761792
-    m_Key: UI_Chatting_Btn2
+  - m_Id: 3717153138020355
+    m_Key: UI_Chatting_Text_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3746355576967168
+    m_Key: UI_Chatting_Text_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3748905717993472
+    m_Key: UI_Chatting_Text_Send
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3757914202181632
+    m_Key: UI_Chatting_Text_Info_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3757914206375936
+    m_Key: UI_Chatting_Text_Info_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3757914206375937
+    m_Key: UI_Chatting_Text_Info_2
     m_Metadata:
       m_Items: []
   - m_Id: 772105752678401

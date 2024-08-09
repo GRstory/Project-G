@@ -19,11 +19,24 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 26564497408
-    m_Localized: Welcome. I am NPC 10100
+    m_Localized: Welcome. I am Ara
     m_Metadata:
       m_Items: []
-  - m_Id: 10468984754176
-    m_Localized: Welcome. I am NPC 10101
+  - m_Id: 2959656773095424
+    m_Localized: The neural pattern of this unit was that of </color><#EB5B2A>- expiration
+      -</color>.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2959656777289728
+    m_Localized: The unit was first driven at 204-8 in 2077. Transplanted </color><#EB5B2A>-unknown-</color>,
+      Ara has cared for homeowners since 2077.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2959656777289729
+    m_Localized: It is recommended to relieve stress periodically with conversations
+      or rewards because you do not usually say your inner feelings well and build
+      them up in your memory. People who are rude or unfriendly may tend to make
+      harsh judgments.
     m_Metadata:
       m_Items: []
   references:

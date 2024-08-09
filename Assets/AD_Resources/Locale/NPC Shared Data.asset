@@ -19,8 +19,20 @@ MonoBehaviour:
     m_Key: 10100_Hello
     m_Metadata:
       m_Items: []
-  - m_Id: 10468984754176
-    m_Key: 10101_Hello
+  - m_Id: 26564497408
+    m_Key: 10100_Hello
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2959656773095424
+    m_Key: 10100_Gestalt
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2959656777289728
+    m_Key: 10100_Persona
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2959656777289729
+    m_Key: 10100_Flaw
     m_Metadata:
       m_Items: []
   m_Metadata:

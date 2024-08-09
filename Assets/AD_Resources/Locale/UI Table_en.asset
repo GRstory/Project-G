@@ -66,28 +66,8 @@ MonoBehaviour:
     m_Localized: QUIT
     m_Metadata:
       m_Items: []
-  - m_Id: 7307918184457
-    m_Localized: CONVERSATION
-    m_Metadata:
-      m_Items: []
-  - m_Id: 7307918184458
-    m_Localized: You can have a conversation with the NPC
-    m_Metadata:
-      m_Items: []
-  - m_Id: 7307918184459
-    m_Localized: Press ESC to quit conversation mode
-    m_Metadata:
-      m_Items: []
   - m_Id: 15063018508288
     m_Localized: 'Enter Text :'
-    m_Metadata:
-      m_Items: []
-  - m_Id: 51388052541440
-    m_Localized: Dialog
-    m_Metadata:
-      m_Items: []
-  - m_Id: 51481849761792
-    m_Localized: NPC Info
     m_Metadata:
       m_Items: []
   - m_Id: 430260342362112
@@ -284,6 +264,46 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 1586606114738179
     m_Localized: You can see description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3717153112854528
+    m_Localized: CONVERSATION
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3717153138020352
+    m_Localized: You can have a conversation with the NPC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3717153138020353
+    m_Localized: Press ESC to quit conversation mode
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3717153138020354
+    m_Localized: Chat to NPC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3717153138020355
+    m_Localized: Dialog
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3746355576967168
+    m_Localized: NPC Info
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3748905717993472
+    m_Localized: Send
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3757914202181632
+    m_Localized: Gestalt
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3757914206375936
+    m_Localized: Persona
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3757914206375937
+    m_Localized: Flaw
     m_Metadata:
       m_Items: []
   references:

@@ -67,28 +67,8 @@ MonoBehaviour:
     m_Localized: "\uC885\uB8CC"
     m_Metadata:
       m_Items: []
-  - m_Id: 7307918184457
-    m_Localized: "\uB300\uD654"
-    m_Metadata:
-      m_Items: []
-  - m_Id: 7307918184458
-    m_Localized: "NPC\uC640 \uB300\uD654\uB97C \uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4"
-    m_Metadata:
-      m_Items: []
-  - m_Id: 7307918184459
-    m_Localized: "ESC\uB97C \uB20C\uB7EC \uB300\uD654\uBAA8\uB4DC \uC885\uB8CC"
-    m_Metadata:
-      m_Items: []
   - m_Id: 15063018508288
     m_Localized: "\uB300\uD654\uB97C \uC785\uB825\uD558\uC138\uC694 :"
-    m_Metadata:
-      m_Items: []
-  - m_Id: 51388052541440
-    m_Localized: "\uB300\uD654 \uAE30\uB85D"
-    m_Metadata:
-      m_Items: []
-  - m_Id: 51481849761792
-    m_Localized: "NPC \uC815\uBCF4"
     m_Metadata:
       m_Items: []
   - m_Id: 430260342362112
@@ -289,6 +269,46 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 1586606114738179
     m_Localized: "\uB3C4\uC804\uACFC\uC81C \uC124\uBA85\uC774 \uBCF4\uC785\uB2C8\uB2E4"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3717153112854528
+    m_Localized: "\uB300\uD654"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3717153138020352
+    m_Localized: "NPC\uC640 \uB300\uD654\uB97C \uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3717153138020353
+    m_Localized: "ESC\uB97C \uB20C\uB7EC \uB300\uD654\uBAA8\uB4DC \uC885\uB8CC"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3717153138020354
+    m_Localized: "NPC\uC640 \uB300\uD654"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3717153138020355
+    m_Localized: "\uB300\uD654 \uAE30\uB85D"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3746355576967168
+    m_Localized: "NPC \uC815\uBCF4"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3748905717993472
+    m_Localized: "\uC804\uC1A1"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3757914202181632
+    m_Localized: "\uAC8C\uC288\uD0C8\uD2B8"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3757914206375936
+    m_Localized: "\uD398\uB974\uC18C\uB098"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3757914206375937
+    m_Localized: "\uACB0\uD568"
     m_Metadata:
       m_Items: []
   references:
