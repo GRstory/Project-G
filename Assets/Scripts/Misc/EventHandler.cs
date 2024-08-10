@@ -8,6 +8,9 @@ public static class EventHandler
     public static event Action<int> ChangeInteractionableText;
     public static event Action<int> ClearAchievement;
 
+    public static event Action BeforeUnloadScene;
+    public static event Action AfterLoadScene;
+
     public static void CallAddAlarmMessageEvent(string message)
     {
         if(AddAlarmMessageEvent != null)
@@ -37,6 +40,22 @@ public static class EventHandler
         if (ClearAchievement != null)
         {
             ClearAchievement(index);
+        }
+    }
+
+    public static void CallBeforeUnloadScene()
+    {
+        if(BeforeUnloadScene != null)
+        {
+            BeforeUnloadScene();
+        }
+    }
+
+    public static void CallAfterLoadScene()
+    {
+        if(AfterLoadScene != null)
+        {
+            AfterLoadScene();
         }
     }
 }

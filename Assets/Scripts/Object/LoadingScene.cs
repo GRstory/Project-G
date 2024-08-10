@@ -18,6 +18,7 @@ public class LoadingScene : MonoBehaviour
         UIManager.Instance.CloseAllPopupUI();
 
         _nextSceneName = sceneName;
+        EventHandler.CallBeforeUnloadScene();
         SceneManager.LoadScene("LoadingScene");
     }
 
