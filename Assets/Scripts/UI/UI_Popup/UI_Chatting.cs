@@ -69,7 +69,7 @@ public class UI_Chatting : UI_Popup
     private void Start()
     {
         //Addressables.LoadAssetAsync<GameObject>(_assetRef).Completed += (handle) => { _logPrefap = handle.Result; };
-        //_api = new OpenAIAPI("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");
+        _api = new OpenAIAPI("");
         //������ ���ٸ� ������� �����ּ���... 
         //_sendButton.onClick.AddListener(() => GetResponse());
 
