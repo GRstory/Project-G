@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class InteractionableEvidence : Interactionable
 {
-    [SerializeField] private UI_DetailView _detailViewUI;
+    private UI_DetailView _detailViewUI;
     [SerializeField] public GameObject _prefap = null;
     [SerializeField] public float _cameraPosition = 1f;
 

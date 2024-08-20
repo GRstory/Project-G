@@ -8,6 +8,7 @@ public class LoadingScene : MonoBehaviour
     private static string _nextSceneName;
     [SerializeField] private Image _progressBar;
 
+
     private void Start()
     {
         StartCoroutine(LoadSceneCoroutine());

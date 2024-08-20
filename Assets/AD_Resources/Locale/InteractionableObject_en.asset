@@ -78,6 +78,22 @@ MonoBehaviour:
     m_Localized: Washstand
     m_Metadata:
       m_Items: []
+  - m_Id: 7501682432675840
+    m_Localized: TV
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7502081604587520
+    m_Localized: TV Remote controller
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7506228974325760
+    m_Localized: Cube
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7516682622734336
+    m_Localized: Drawer
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
