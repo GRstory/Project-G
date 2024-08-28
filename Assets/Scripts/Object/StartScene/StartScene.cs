@@ -8,6 +8,7 @@ public class StartScene : SceneController
 {
     [SerializeField] GameObject _StartCanvas;
 
+
     protected override void OnEnable()
     {
         base.OnEnable();
@@ -22,5 +23,9 @@ public class StartScene : SceneController
         yield return new WaitForSecondsRealtime(1.5f);
 
         SceneManager.LoadScene("MainScene");
+    }
+    public override bool IsClearScene()
+    {
+        return true;
     }
 }

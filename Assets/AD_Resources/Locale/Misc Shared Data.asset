@@ -31,6 +31,14 @@ MonoBehaviour:
     m_Key: Alarm_RequiredItem_2
     m_Metadata:
       m_Items: []
+  - m_Id: 10164655479459840
+    m_Key: Alarm_Clear_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10164810966503424
+    m_Key: Alarm_Clear_2
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

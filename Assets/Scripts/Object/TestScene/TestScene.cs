@@ -1,10 +1,15 @@
 using UnityEngine;
 
-public class TestScene : MonoBehaviour
+public class TestScene : SceneController
 {
-    [SerializeField] private Transform _spawnPoint;
-    private void OnEnable()
+
+    protected override void OnEnable()
     {
-        FlowManager.Instance.Player.transform.position = _spawnPoint.position;
+        base.OnEnable();
+    }
+
+    public override bool IsClearScene()
+    {
+        return _isClear;
     }
 }

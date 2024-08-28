@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
+[RequireComponent(typeof(Outline))]
 public class Interactionable : MonoBehaviour
 {
     [SerializeField] private string _guid = "";
@@ -13,6 +14,7 @@ public class Interactionable : MonoBehaviour
     protected bool _canInteraction = true;
 
     private WaitForSeconds _waitForSeconds = null;
+    private Outline _outline;
 
     public string GUID { get { return _guid; } }
     public int ID { get { return _id; } }
@@ -30,6 +32,7 @@ public class Interactionable : MonoBehaviour
             }
         }
         _guid = System.Guid.NewGuid().ToString();
+        _outline = GetComponent<Outline>();
     }
 
     protected virtual void Start()
@@ -40,8 +43,12 @@ public class Interactionable : MonoBehaviour
     protected virtual void Init()
     {
         _waitForSeconds = new WaitForSeconds(_coolDownTime);
+        _outline.outlineMode = Outline.Mode.OutlineVisible;
+        _outline.outlineColor = Color.black;
+        _outline.outlineWidth = 3;
 
         gameObject.layer = 8;
+
     }
 
     public void TryInteraction(Transform fromTransform)
